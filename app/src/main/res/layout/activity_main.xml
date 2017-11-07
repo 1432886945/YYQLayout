@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jni.example.yyqpullrefresh.PullRefreshView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pull"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:maxDownOffset="240dp"
+    app:maxUpOffset="240dp"
+    app:refreshOffset="120dp"
+    app:loadMoreOffset="60dp"
+    app:contentFixed="false"
+    app:disableNestedScrolling="false"
+    app:movieRatio="0.5">
+
+    <ScrollView
+        android:id="@+id/content_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/colorPrimaryDark"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/white"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/colorPrimary"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/white"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/colorPrimaryDark"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/white"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/colorPrimaryDark"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <com.jni.example.yyqpullrefresh.HeaderLayout
+        android:id="@+id/scrollview_headerview"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+
+    <com.jni.example.yyqpullrefresh.FooterLayout
+        android:id="@+id/scrollview_footerview"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+
+</com.jni.example.yyqpullrefresh.PullRefreshView>
